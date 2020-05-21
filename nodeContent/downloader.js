@@ -2,6 +2,7 @@ const request = require('request');
 const maxApi = require("max-api");
 const csv = require('csv-parser');
 const fs = require('fs');
+
 let path = "";
 let currentFileName = "";
 
