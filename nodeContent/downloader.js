@@ -30,7 +30,6 @@ download = (fileIdName) =>{
 	.on('finish', () => {
         // The file was downloaded
 		// Renaming the file
-		maxApi.post("dl ok ");
 		fs.renameSync(path+fileIdName, path+currentFileName);
 		maxApi.outlet("done "+currentFileName);
     })	

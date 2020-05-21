@@ -39,6 +39,73 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontsize" : 12.0,
+					"id" : "obj-34",
+					"maxclass" : "live.comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 429.583333333333371, 91.0, 127.0, 21.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ -1.0, -0.54060674255544, 208.0, 21.0 ],
+					"text" : "First, set a directory",
+					"textjustification" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 12.0,
+					"id" : "obj-32",
+					"maxclass" : "live.comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 601.583333333333371, 124.0, 125.0, 21.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ -1.0, 126.183323816819609, 208.0, 21.0 ],
+					"textjustification" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontsize" : 18.0,
+					"id" : "obj-30",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 31.833333333333371, 31.0, 233.0, 48.0 ],
+					"text" : "BBC Soud Effect Downloader"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-26",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 313.833333333333485, 73.0, 55.0, 22.0 ],
+					"text" : "plugout~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 313.833333333333485, 31.0, 55.0, 22.0 ],
+					"text" : "plugin~"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-38",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -68,7 +135,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 452.0, 91.0, 29.5, 22.0 ],
+					"patching_rect" : [ 601.583333333333371, 91.0, 29.5, 22.0 ],
 					"text" : "set"
 				}
 
@@ -80,7 +147,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 452.0, 61.0, 54.0, 22.0 ],
+					"patching_rect" : [ 601.583333333333371, 61.0, 54.0, 22.0 ],
 					"text" : "sel bang"
 				}
 
@@ -188,7 +255,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 487.0, 91.0, 72.0, 22.0 ],
+					"patching_rect" : [ 636.583333333333371, 91.0, 72.0, 22.0 ],
 					"text" : "prepend set"
 				}
 
@@ -200,7 +267,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 280.0, 60.0, 72.0, 22.0 ],
+					"patching_rect" : [ 429.583333333333371, 60.0, 72.0, 22.0 ],
 					"text" : "prepend set"
 				}
 
@@ -329,30 +396,13 @@
 			}
 , 			{
 				"box" : 				{
-					"fontface" : 0,
-					"fontsize" : 14.0,
-					"id" : "obj-118",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 452.0, 124.0, 107.0, 55.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ -1.0, 126.183323816819609, 206.0, 39.0 ],
-					"text" : "Done ! : Norton500CcMotorCycle9.wav"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"color" : [ 0.823529411764706, 0.827450980392157, 0.168627450980392, 1.0 ],
 					"id" : "obj-115",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 452.0, 31.0, 44.0, 22.0 ],
+					"patching_rect" : [ 601.583333333333371, 31.0, 44.0, 22.0 ],
 					"text" : "r logUI"
 				}
 
@@ -445,11 +495,11 @@
 					"presentation_rect" : [ 33.136363238096237, 91.540609663183034, 137.727273523807526, 25.899398754943491 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "live.text[1]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_type" : 2,
-							"parameter_longname" : "live.text[1]"
+							"parameter_type" : 2
 						}
 
 					}
@@ -474,11 +524,11 @@
 					"presentation_rect" : [ 33.136363238096237, 64.267883186990559, 137.727273523807526, 25.503676782954813 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "live.text",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_type" : 2,
-							"parameter_longname" : "live.text"
+							"parameter_type" : 2
 						}
 
 					}
@@ -1006,21 +1056,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 280.0, 31.0, 127.0, 22.0 ],
+					"patching_rect" : [ 429.583333333333371, 31.0, 127.0, 22.0 ],
 					"text" : "r downloadDirectoryUI"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-24",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 280.0, 91.0, 119.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ -1.0, -0.54060674255544, 206.0, 20.0 ],
-					"text" : "First, set a directory"
 				}
 
 			}
@@ -1399,8 +1436,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -1411,7 +1446,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-24", 0 ],
+					"destination" : [ "obj-34", 0 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -1582,7 +1617,21 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-118", 0 ],
+					"destination" : [ "obj-26", 1 ],
+					"source" : [ "obj-19", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -1603,7 +1652,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-118", 0 ],
+					"destination" : [ "obj-32", 0 ],
 					"source" : [ "obj-22", 0 ]
 				}
 
